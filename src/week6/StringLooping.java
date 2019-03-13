@@ -41,9 +41,7 @@ public class StringLooping {
         
            
          break; 
-         
-      }else{
-          
+      }else{  
           ctl++;
           System.out.println("Incorrect password, please try again:");  
           System.out.println("Number of attempts:" + ctl);
