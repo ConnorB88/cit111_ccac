@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package week7;
 
 import java.util.Random;
@@ -17,7 +13,7 @@ public class RandomNumGen {
         int totalFailures = 0;
         final int QUALITY_THRESHOLD = 80;
         final int MAX_QUALITY = 100;
-        final int UNITS_TO_MAKE = 50;
+        final int UNITS_TO_MAKE = 100;
         
         Random randGenerator = new Random();
             
@@ -38,6 +34,7 @@ public class RandomNumGen {
         }
       }
        System.out.println("Tested units:" + "" + totalUnitsMade);
-       System.out.println("Failure Ratio:" + totalUnitsMade/totalFailures);
+       double failureRate = (double)totalFailures/(double)totalUnitsMade;
+       System.out.println("Failure Ratio:" + failureRate);
    }
 }  

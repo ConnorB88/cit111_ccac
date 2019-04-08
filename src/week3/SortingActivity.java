@@ -18,7 +18,6 @@ public class SortingActivity {
         
         counter++;
         
-        result = counter*multiplier;
          
     }
  }
