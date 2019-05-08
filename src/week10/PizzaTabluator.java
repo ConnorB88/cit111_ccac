@@ -49,7 +49,7 @@ public class PizzaTabluator {
       System.out.println("Do you want to order any more roast beef sliders?");
       String anwser2 = keyScan.next();
       
-      if(anwser2.equals(USER_ANWSER)){
+      if(anwser.equals(USER_ANWSER) || anwser.equals(USER_ANWSER2)){
       System.out.println("How many more roast beef sliders would you like to order?");
       int roastbeefresponse2 = keyScan.nextInt();
       int returnedroastbeefValue2 = orderRoastBeefSliders(roastbeefresponse2);
